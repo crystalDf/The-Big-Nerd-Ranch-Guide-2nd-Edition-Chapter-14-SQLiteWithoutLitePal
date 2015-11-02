@@ -1,0 +1,27 @@
+package com.star.sqlitewithoutlitepal.databases;
+
+
+public class MySQLiteDbSchema {
+
+    public static final class NewsTable {
+
+        public static final String TABLE_NAME = "news";
+
+        public static final class Cols {
+            private static final String ID = "_id";
+            public static final String TITLE = "title";
+            public static final String CONTENT = "content";
+            public static final String PUBLISHED_DATE = "published_date";
+            public static final String COMMENT_COUNT = "comment_count";
+
+        }
+
+        public static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "("
+                + Cols.ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + Cols.TITLE + " TEXT, "
+                + Cols.CONTENT + " TEXT, "
+                + Cols.PUBLISHED_DATE + " INTEGER, "
+                + Cols.COMMENT_COUNT + " INTEGER"
+                + ")";
+    }
+}
