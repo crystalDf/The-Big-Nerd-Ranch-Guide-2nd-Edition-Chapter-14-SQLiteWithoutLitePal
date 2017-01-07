@@ -43,4 +43,5 @@ public class MySQLiteDbSchema {
                 + Cols.PUBLISHED_DATE + " INTEGER";
 
     }
+
 }

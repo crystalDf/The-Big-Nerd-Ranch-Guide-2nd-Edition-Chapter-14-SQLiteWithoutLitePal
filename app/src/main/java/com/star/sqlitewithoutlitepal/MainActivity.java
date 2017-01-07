@@ -16,4 +16,5 @@ public class MainActivity extends AppCompatActivity {
         MySQLiteBaseHelper mySQLiteBaseHelper = new MySQLiteBaseHelper(this);
         SQLiteDatabase sqLiteDatabase = mySQLiteBaseHelper.getWritableDatabase();
     }
+
 }
